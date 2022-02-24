@@ -9,8 +9,8 @@ const Shop = () => {
         <div>
           {products.map((product) => (
             <Link
-              to={`/shop/${products.indexOf(product)}`}
-              key={products.indexOf(product)}
+              to={`/shop/${product.id}`}
+              key={product.id}
               className="shop-item"
             >
               {product.name} | ${product.price}
