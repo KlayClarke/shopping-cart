@@ -1,8 +1,12 @@
-const App = () => {
-  return <div></div>;
+const Home = () => {
+  return (
+    <div>
+      <h1>Welcome Home</h1>
+    </div>
+  );
 };
 
-export default App;
+export default Home;
 
 // TODO
 // create header with shopping cart icon
