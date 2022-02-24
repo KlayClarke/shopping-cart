@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import CartContext from "./Cart/CartContext";
+import { useContext, useEffect } from "react";
 
 const Nav = () => {
+  let cart = useContext(CartContext);
+
   return (
     <nav>
       <Link to={"/"} className="nav-link logo">
@@ -14,7 +18,7 @@ const Nav = () => {
         </li>
         <li>
           <Link to={"/cart"} className="nav-link">
-            Cart
+            Cart[{cart.length}]
           </Link>
         </li>
       </ul>
