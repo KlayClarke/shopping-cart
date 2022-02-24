@@ -21,6 +21,11 @@ nav li {
   list-style-type: none;
 }
 
+img {
+  width: 200px;
+  height: 140px;
+}
+
 .nav-link {
   text-decoration: none;
 }
@@ -34,8 +39,6 @@ nav li {
   margin-right: 60px;
 }
 
-.card-item {
-  background-color: lightcoral;
-  height: 40px;
-  width: 40px;
+.shop-item {
+  display: flex;
 }
