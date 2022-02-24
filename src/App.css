@@ -21,6 +21,23 @@ nav li {
   list-style-type: none;
 }
 
+#grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards-grid {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  width: 40%;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
 .nav-link:first-child {
   margin-left: 40px;
 }
@@ -28,4 +45,10 @@ nav li {
 .nav-link:nth-child(2),
 .nav-link:last-child {
   margin-right: 60px;
+}
+
+.card-item {
+  background-color: lightcoral;
+  height: 40px;
+  width: 40px;
 }
